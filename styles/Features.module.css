@@ -1,0 +1,42 @@
+.containerStyling{
+    /* display: flex; */
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  
+ 
+  margin-bottom: 5rem;
+  margin:auto;
+   
+}
+.containerStyling>h6{
+  color: var(--mainTextColor);
+  font-weight: 700;
+}
+
+.containerStyling::-webkit-scrollbar {
+    height: 5px;
+
+ 
+  }
+  
+  .containerStyling::-webkit-scrollbar-thumb {
+    background-color: #2d2f7d ;
+    border-radius: 10px;
+  
+  }
+  
+  .containerStyling::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,0.4) ;
+    border-radius: 10px;
+    height: 2px;
+   
+
+  }
+
+.fItem {
+    width: 100vw;
+  }
+  .featurePrice{
+    color:var(--priceColor);
+    font-weight: bold;
+  }

@@ -1,0 +1,39 @@
+.BadgeColor {
+    color: #fff !important;
+    position: absolute;
+    top: 1px;
+    background-color: #2D2F78;
+    border-radius: 50%;
+    width: 15px;
+    font-size: 10px;
+    right: 3px;
+}
+
+.allCart {
+    display: flex;
+    align-items: center;
+    margin: 0 20px 20px;
+
+
+}
+
+.imgCart {
+    width: 20%;
+
+}
+
+.cartDetails {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cartIcon {
+    cursor: pointer;
+    color: var(--spanText);
+}
+
+.cartPrice {
+    color: var(--spanText);
+}

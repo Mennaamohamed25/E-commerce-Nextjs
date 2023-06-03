@@ -1,0 +1,82 @@
+@import url(/globals.css);
+
+.topNav {
+  background-color: var(--bgColor);
+  color: #ffffff;
+}
+.bottomNav {
+  background-color: var(--secondBg);
+}
+
+.logoText {
+  font-weight: 600;
+}
+.navIcons > a {
+  color: var(--mainTextColor) !important;
+}
+.navIcons > a:hover,
+.navIcons > a:focus {
+  color: var(--mainColor) !important;
+}
+.navLinks > a {
+  color: #ffffff !important;
+}
+.navLinks > a:hover,
+.navLinks > a:focus {
+  color: var(--activeColor) !important;
+}
+.navSearch {
+  border-radius: 15px !important;
+}
+.searchIcon {
+  position: absolute;
+  right: 15px;
+  top: 9px;
+  color: var(--mainColor);
+}
+.barIcons {
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.canvesLogo {
+  padding-left: 15px;
+}
+.canvesLogo::after {
+  content: "";
+  display: block;
+  width: 100%;
+
+  height: 1px;
+  background: #c0c0c0;
+  left: 0;
+  margin-top: 15px;
+
+  position: absolute;
+}
+.canvasLinks > a {
+  color: var(--secondBg);
+  font-weight: 600;
+}
+.canvasLinks > a:hover,
+.canvasLinks > a:focus {
+  color: var(--activeColor) !important;
+}
+
+.canvasLink > a {
+  color: var(--secondBg);
+  font-weight: 600 !important;
+}
+.canvasLink > a:hover,
+.canvasLink > a:focus {
+  color: var(--activeColor) !important;
+}
+/* Second SearchBar */
+.searchBarSmall{
+  direction: rtl;
+}
+.searchIconTwo {
+  position: absolute;
+  left: 15px;
+  top: 9px;
+  color: var(--mainColor);
+}

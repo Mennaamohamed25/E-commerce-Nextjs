@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -15,12 +15,85 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+:root {
+  --bgColor:#2D2F87 ;
+  --secondBg:#121212;
+  --mainColor: #2D2F78; 
+  --secondColor:#2E2E2E;
+  --activeColor:#FFD800;
+  --priceColor:#BA0829;
+  --mainTextColor:#050708;
+  --imgBg:#2D2F7D;
+}
+/* Carousel Page */
+.btn-close{
+  position:relative !important;
+  left:0 !important;
+}
+.carousel .swiper-button-next, .swiper-rtl .swiper-button-prev{
+  right: 100px !important;
+ 
+}
+.carousel .swiper-button-prev, .swiper-rtl .swiper-button-next{
+  left: 100px  !important;
+}
+.swiper-button-next, .swiper-button-prev{
+  color:var(--secondBg) !important;
+}
+.swiper-pagination-bullet{
+  width: 6px !important;
+  height: 6px !important;
+  background-color:#FFFFFF !important;
+  opacity: unset !important;
+}
+.swiper-pagination-bullet-active{
+  background-color: #FFFFFF !important;
+  width: 2rem!important;
+  height:5px!important;
+  border-radius: 5px !important;
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+  opacity: 1 !important;
+}
+/*  */
+ 
+.products .swiper-button-next, .swiper-rtl .swiper-button-prev{
+  right: 0px !important;
+ 
+}
+.products .swiper-button-prev, .swiper-rtl .swiper-button-next{
+  left: 0px !important;
+}
+.productsSlider{
+  width: 150.2px !important;
+  margin: auto !important;
+
+}
+.products h2{
+  color: var( --mainColor);
+}
+.dropdown-toggle{
+  border:unset !important;
+}
+.dropdown-toggle::after{
+  all: unset !important;
+}
+
+@media (max-width: 1199px) {
+  .products .swiper-button-next, .swiper-rtl .swiper-button-prev{
+    display:none !important;
+   
   }
-  body {
-    color: white;
-    background: black;
+  .products .swiper-button-prev, .swiper-rtl .swiper-button-next{
+    display:none !important;
+  }
+}
+@media (max-width: 900px) {
+  .carousel .swiper-button-next, .swiper-rtl .swiper-button-prev{
+    right: 50px !important;
+   
+  }
+  .carousel .swiper-button-prev, .swiper-rtl .swiper-button-next{
+    left: 50px  !important;
   }
 }

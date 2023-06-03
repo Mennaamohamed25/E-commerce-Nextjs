@@ -1,0 +1,12 @@
+@import url(/globals.css);
+.brandBg{
+    background-color: var(--imgBg);
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+    margin: auto;
+   
+}
